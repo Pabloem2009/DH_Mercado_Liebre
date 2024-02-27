@@ -1,0 +1,389 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    background-color: #ebebeb;
+}
+
+header {
+    background-color: #EAC926;
+    width: 100vw;
+}
+
+.barra-superior {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 80px;
+
+}
+
+.barra-superior form {
+    width: 50%;
+    margin: auto;
+}
+
+.logo {
+    width: 50%;
+    padding: 5px;
+    max-height:80px;
+}
+
+.barra_de_busqueda {
+    display: flex;
+    width: 90%;
+    height: 50%;
+    background-color: white;
+    border-radius: 7px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+div.barra_de_busqueda input {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: 666;
+    background-color: white;
+    border: solid 2px white;
+    height: 100%;
+    width: 100%;
+    border-radius: 7px;
+
+}
+
+div.barra_de_busqueda button {
+    color: 666;
+    background-color: white;
+    padding: 6px;
+    border: solid 0.5px white;
+    border-radius: 10px;
+    height: 100%;
+
+}
+
+div.barra_de_busqueda button i {
+    border-left: solid 0.1px #666666;
+    padding-left: 5px;
+
+}
+
+.mensaje_cuotas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+
+nav {
+    padding: 5px;
+    line-height: 15px;
+    display: none;
+    max-height: 80px;
+}
+
+nav a {
+    color: black;
+}
+
+.burger-menu {
+    text-align: center;
+    padding: 5px;
+}
+
+div.burger-menu i {
+    color: white;
+    font-size: 20px;
+    background-color: #04264C;
+    padding: 8px;
+}
+
+div.burger-menu button {
+    background-color: #04264C;
+    border-radius: 7px;
+}
+
+.home_banner {
+    background-color: #ebebeb;
+}
+
+.home_banner img {
+    width: 100%;
+
+}
+
+main {
+    margin: auto;
+    width: 90vw;
+    background-color: #ebebeb;
+}
+
+.titulo-seccion {
+    width: 90%;
+    margin: auto;
+
+}
+
+section h2 {
+    font-size: 24px;
+    width: 90%;
+    color: #666;
+    padding-bottom: 15px;
+}
+
+.precios {
+    font-size: 18px;
+    margin: 1px;
+    flex-grow: 0.3;
+    text-align: center;
+}
+
+.descuentos {
+    font-size: 16px;
+    color: #39b54a;
+    margin: 0px;
+    flex-grow: 0.7;
+}
+
+.descripciones {
+    font-size: 16px;
+    display: none;
+}
+
+.imagen_producto {
+    text-align: center;
+}
+
+.imagen_producto img {
+    width: 90%;
+}
+
+.info-producto {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 90%;
+    background-color: white;
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.info-producto i {
+    color: #39b54a;
+    margin-bottom: 10px;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: solid 1px #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+footer div {
+    text-align: center;
+    background-color: white;
+    color: #666;
+    padding: 10px;
+}
+
+footer div i {
+    font-size: 2em;
+    color: #1259c3;
+    margin: 10px;
+}
+
+footer div h2 {
+    font-size: 1em;
+    margin-bottom: 0px;
+}
+
+footer div p {
+    margin-top: 0px;
+}
+
+/* Tablets */
+@media (min-width: 361px) {
+
+    .barra-superior {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    .barra-superior form {
+        width: 30%;
+    }
+
+    .logo {
+        width: 30%;
+        margin: 0% 3% 0%;
+    }
+
+
+    .barra_de_busqueda {
+        justify-content: center;
+        width: 80%;
+        height: 50%;
+        flex-wrap: nowrap;
+
+    }
+
+    .mensaje_cuotas {
+        width: 30%;
+        margin: 0% 3% 0%;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .barra-navegador ul {
+        display: flex;
+        margin: 5px;
+    }
+
+    .barra-navegador ul li {
+        margin: 5px;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .titulo-seccion {
+        width: 95%;
+        margin: auto;
+    
+    }
+
+    .seccion-1,
+    .seccion-2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .caja-producto {
+        width: 50%;
+    }
+    
+    .imagen_producto img {
+        box-shadow: 2px -2px 5px 0px rgb(100, 100, 100);
+    }
+
+    .info-producto {
+        display: flex;
+        flex-wrap: wrap;
+        box-shadow: 2px 0px 5px 0px rgb(100, 100, 100);
+    }
+
+    .info-producto p {
+        padding: 1%;
+    }
+
+    footer div {
+        padding: 3% 8% 3%;
+    }
+
+    .copyright {
+        padding: 0% 8% 3%;
+    }
+
+    .caja-producto:hover {
+        box-shadow: 2px -2px 5px 0px rgb(100, 100, 100);
+    }
+
+    .caja-producto:hover .info-producto .descripciones {
+        display: flex;
+    }
+
+    .fa-solid.fa-truck{
+        transition: transform 2s;
+    }
+
+    .fa-solid.fa-truck:hover{
+        transform: rotateZ(-90deg);
+    }
+
+    .fa-solid.fa-credit-card:hover,
+    .fa-solid.fa-gift:hover,
+    .fa-solid.fa-user-shield:hover {
+        color: #EAC926;
+        
+    }
+
+}
+
+/*nav*/
+@media (min-width: 550px) {
+    .barra-navegador ul li {
+        margin: 15px;
+    }
+
+    .barra_de_busqueda {
+        height: 30px;
+    }
+
+    footer div {
+        padding: 5% 12% 5%;
+    }
+}
+
+/*Desktop */
+@media (min-width: 769px) {
+    .caja-producto {
+        width: 25%;
+    }
+
+    nav {
+        justify-content: space-around;
+    }
+
+    .contenedor_footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    footer div {
+        padding: 2% 2% 2%;
+    }
+
+    .avisos-parroquiales {
+        width: 30%;
+    }
+
+    .copyright {
+        padding: 15px 50px 15px;
+        text-align: left;
+    }
+
+
+
+
+
+}
+
+/*Search bar*/
+@media (min-width: 890px) {
+    .barra_de_busqueda {
+        justify-content: space-around;
+    }
+
+
+
+}

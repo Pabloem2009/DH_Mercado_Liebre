@@ -1,0 +1,112 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    background-color: #ebebeb;
+    margin: auto;
+}
+
+header {
+    background-color: #EAC926;
+    width: 100vw;
+}
+
+.barra-superior {
+    width: 100vw;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.logo {
+    width: 50%;
+    max-width:290px;
+    padding: 10px;
+    margin: auto;
+}
+
+.mensaje_cuotas {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+form {
+    padding: 25px 25px 5px;
+}
+
+.campo {
+    width: 90%;
+    margin: auto;
+}
+
+input#nombre_usuario,
+input#contrasena {
+    width: 100%;
+    padding: 5px;
+    border: solid 2px white;
+    border-radius: 10px;
+    margin: 10px 0px 10px;
+}
+
+.nombre_usuario,
+.contrasena {
+    font-weight: bold;
+}
+
+.campo button{
+    color: white;
+    font-weight: bold;
+    background-color: #04264C;
+    padding: 10px;
+    border-radius: 5px; 
+    width: 140px;
+    height: 38px;
+}
+
+.campo button:hover{
+    background-color: #0022AA;
+}
+
+.copia_form {
+    padding: 0px 25px 5px;
+}
+
+.copia_campo {
+    width: 90%;
+    margin: auto;
+}
+
+.copia_campo button{
+    color: white;
+    font-weight: bold;
+    background-color: #04264C;
+    padding: 10px;
+    border-radius: 5px; 
+    width: 140px;
+    height: 38px;
+}
+
+.copia_campo button:hover{
+    background-color: #0022AA;
+}
+
+
+
+@media (min-width: 361px) {
+    .copia_campo,
+    .campo {
+        max-width: 350px;
+    }
+
+}

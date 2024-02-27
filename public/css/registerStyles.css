@@ -1,0 +1,101 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    background-color: #ebebeb;
+    margin: auto;
+}
+
+header {
+    background-color: #EAC926;
+    width: 100vw;
+}
+
+.barra-superior {
+    width: 100vw;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.logo {
+    width: 50%;
+    max-width:290px;
+    padding: 10px;
+    margin: auto;
+}
+
+.mensaje_cuotas {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+form {
+    padding: 15px;
+}
+
+.campo {
+    width: 90%;
+    margin: auto;
+}
+
+input#nombre_completo,
+input#user_name,
+input#email,
+input#fecha_nacimiento,
+input#direccion,
+input#contrasena,
+input#confirmacion {
+    width: 100%;
+    padding: 5px;
+    border: solid 2px white;
+    border-radius: 10px;
+    margin: 10px 0px 10px;
+}
+
+.nacimiento,
+.perfil,
+.categorias,
+.foto_perfil,
+.contrasena,
+.confirmar_contrasena {
+    font-weight: bold;
+}
+
+.campo button{
+    color: white;
+    font-weight: bold;
+    background-color: #04264C;
+    padding: 10px;
+    border-radius: 5px; 
+    width: 70px;
+}
+
+
+@media (min-width: 361px) {
+    input#nombre_completo,
+    .campo {
+        max-width: 350px;
+    }
+
+    fieldset {
+        max-width: 350px;
+        margin: auto;
+    }
+
+}
+
+@media (min-width: 769px) {
+
+}

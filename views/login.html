@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/loginStyles.css">
+</head>
+
+<body>
+    <header>
+        <div class="barra-superior">
+            <img class="logo" src="images\logo-mercado-liebre.svg" alt="Logo_de_mercado_liebre">
+            <div class="mensaje_cuotas">
+                <i class="fa-solid fa-hand-holding-dollar"></i>
+                <p>Compra en cuotas y sin tarjeta de crédito</p>
+            </div>
+        </div>
+    </header>
+    <form action="" method="POST">
+        <div class="campo">
+            <label class="nombre_usuario" for="nombre_usuario">Nombre de usuario</label>
+            <input type="text" name="nombre_usuario" id="nombre_usuario" placeholder="User Name">
+        </div>
+        <br />
+        <div class="campo">
+            <label class="contrasena" for="contrasena">Contraseña</label>
+            <input type="password" name="contrasena" id="contrasena" placeholder="Password">
+        </div>
+        <br />
+        <div class="campo">
+            <button type="submit">Enviar</button>
+        </div>
+    </form>
+    <div class="copia_form">
+        <div class="copia_campo">
+            <a href="./register">
+                <button type=" submit">Crea tu cuenta</button>
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>
